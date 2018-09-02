@@ -3,11 +3,11 @@
 
 stdenv.mkDerivation rec {
   name = "adwaita-icon-theme-${version}";
-  version = "3.28.0";
+  version = "3.29.90";
 
   src = fetchurl {
     url = "mirror://gnome/sources/adwaita-icon-theme/${gnome3.versionBranch version}/${name}.tar.xz";
-    sha256 = "0l114ildlb3lz3xymfxxi0wpr2x21rd3cg8slb8jyxynzwfqrbks";
+    sha256 = "0hxw02qbwx9ccliyanwqx64yrgb55w2naqc21g7abamhj1510229";
   };
 
   passthru = {

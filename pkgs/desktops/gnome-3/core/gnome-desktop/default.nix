@@ -4,13 +4,13 @@
 
 stdenv.mkDerivation rec {
   name = "gnome-desktop-${version}";
-  version = "3.28.2";
+  version = "3.29.91";
 
   outputs = [ "out" "dev" "devdoc" ];
 
   src = fetchurl {
     url = "mirror://gnome/sources/gnome-desktop/${gnome3.versionBranch version}/${name}.tar.xz";
-    sha256 = "0c439hhpfd9axmv4af6fzhibksh69pnn2nnbghbbqqbwy6zqfl30";
+    sha256 = "0ks638p56jm82whqj89l7npdq5k2hb8gqrjih3hziw3blah2gq78";
   };
 
   # TODO: remove with 3.30

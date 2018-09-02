@@ -3,11 +3,11 @@
 
 stdenv.mkDerivation rec {
   name = "gnome-online-miners-${version}";
-  version = "3.26.0";
+  version = "3.29.90";
 
   src = fetchurl {
     url = "mirror://gnome/sources/gnome-online-miners/${gnome3.versionBranch version}/${name}.tar.xz";
-    sha256 = "7f404db5eccb87524a5dfcef5b6f38b11047b371081559afbe48c34dbca2a98e";
+    sha256 = "07jqhx1zfgzrxnnkdi0g419nb9dqqy313q84k1yz619j9093znsv";
   };
 
   passthru = {

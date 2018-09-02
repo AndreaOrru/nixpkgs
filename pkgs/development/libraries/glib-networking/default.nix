@@ -3,14 +3,14 @@
 
 let
   pname = "glib-networking";
-  version = "2.56.0";
+  version = "2.57.92";
 in
 stdenv.mkDerivation rec {
   name = "${pname}-${version}";
 
   src = fetchurl {
     url = "mirror://gnome/sources/${pname}/${gnome3.versionBranch version}/${name}.tar.xz";
-    sha256 = "14vw8xwajd7m31bpavg2psk693plhjikwpk8bzf3jl1fmsy11za7";
+    sha256 = "0lf5n9h4c8w9lp9qjii8zdgwhj7x5nprzj59adzx9nijpc2xkj40";
   };
 
   outputs = [ "out" "dev" ]; # to deal with propagatedBuildInputs

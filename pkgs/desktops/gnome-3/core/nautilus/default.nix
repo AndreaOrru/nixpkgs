@@ -4,13 +4,13 @@
 
 let
   pname = "nautilus";
-  version = "3.28.1";
+  version = "3.29.92";
 in stdenv.mkDerivation rec {
   name = "${pname}-${version}";
 
   src = fetchurl {
     url = "mirror://gnome/sources/${pname}/${gnome3.versionBranch version}/${name}.tar.xz";
-    sha256 = "19dhpa2ylrg8d5274lahy7xqr2p9z3jnq1h4qmsh95czkpy7is4w";
+    sha256 = "09jwi69q6a6a00kf6df0kd4kgvjhkfni7jbdp9zk2vib1pvqb5rn";
   };
 
   nativeBuildInputs = [ meson ninja pkgconfig libxml2 gettext wrapGAppsHook desktop-file-utils ];

@@ -3,11 +3,11 @@
 
 stdenv.mkDerivation rec {
   name = "lightsoff-${version}";
-  version = "3.28.0";
+  version = "3.29.90";
 
   src = fetchurl {
     url = "mirror://gnome/sources/lightsoff/${gnome3.versionBranch version}/${name}.tar.xz";
-    sha256 = "0rwh9kz6aphglp79cyrfjab6vy02vclq68f646zjgb9xgg6ar73g";
+    sha256 = "1ax0dy24cx47kl28agbzwiz0ks7canfmi5n3zrwmpzr7ixaqfgqa";
   };
 
   nativeBuildInputs = [ vala pkgconfig wrapGAppsHook itstool gettext appstream-glib libxml2];

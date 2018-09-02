@@ -9,13 +9,13 @@
 
 let
   pname = "gnome-control-center";
-  version = "3.28.2";
+  version = "3.29.92";
 in stdenv.mkDerivation rec {
   name = "${pname}-${version}";
 
   src = fetchurl {
     url = "mirror://gnome/sources/${pname}/${gnome3.versionBranch version}/${name}.tar.xz";
-    sha256 = "0d6pjdbsra16nav8201kaadja5yma92bhziki9601ilk2ry3v7pz";
+    sha256 = "08sjfzfkssw0kkxvdk8mya821b5d6n8ycpmi2xnx544k92hha6by";
   };
 
   nativeBuildInputs = [

@@ -6,13 +6,13 @@
 
 let
   pname = "seahorse";
-  version = "3.20.0";
+  version = "3.29.92";
 in stdenv.mkDerivation rec {
   name = "${pname}-${version}";
 
   src = fetchurl {
     url = "mirror://gnome/sources/${pname}/${gnome3.versionBranch version}/${name}.tar.xz";
-    sha256 = "e2b07461ed54a8333e5628e9b8e517ec2b731068377bf376570aad998274c6df";
+    sha256 = "1037ckkylnc1swjcsrv8c6y8x4wlcd9g68cb6y4j50krif5505m4";
   };
 
   doCheck = true;

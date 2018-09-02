@@ -4,7 +4,7 @@
 
 let
   pname = "gdk-pixbuf";
-  version = "2.36.12";
+  version = "2.37.92";
 in
 stdenv.mkDerivation rec {
   name = "${pname}-${version}";
@@ -19,7 +19,7 @@ stdenv.mkDerivation rec {
     owner = "GNOME";
     repo = "gdk-pixbuf";
     rev = version;
-    sha256 = "18lwqg63vyap2m1mw049rnb8fm869429xbf7636a2n21gs3d3jwv";
+    sha256 = "0j72hbspb1rmjprl7chzqpb7sj3xddvdn8frk3jibw8hfjk1kx8v";
   };
 
   patches = [

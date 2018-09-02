@@ -5,13 +5,13 @@
 , vala, meson, ninja }:
 
 let
-  version = "3.28.2";
+  version = "3.29.92";
 in stdenv.mkDerivation rec {
   name = "gnome-contacts-${version}";
 
   src = fetchurl {
     url = "mirror://gnome/sources/gnome-contacts/${gnome3.versionBranch version}/${name}.tar.xz";
-    sha256 = "1ilgmvgprn1slzmrzbs0zwgbzxp04rn5ycqd9c8zfvyh6zzwwr8w";
+    sha256 = "048dfks46v351yj8h5mrhbhmdwmdscmd1j64qil986kplq9sy267";
   };
 
   propagatedUserEnvPkgs = [ evolution-data-server ];
